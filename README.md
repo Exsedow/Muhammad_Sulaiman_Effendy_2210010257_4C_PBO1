@@ -14,7 +14,7 @@ Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 
 1. *Class* adalah template atau blueprint dari object. Pada kode ini, AdminKasir, AdminKasirDetail, dan AdminKasirBeraksi adalah contoh dari class.
 
-bash
+```bash
 public class AdminKasir {
     ...
 }
@@ -26,12 +26,13 @@ public class AdminKasirDetail extends AdminKasir {
 public class AdminKasirBeraksi {
     ...
 }
-
+```
 
 2. *Object* adalah instance dari class. Pada kode ini, admin[i] = new AdminKasirDetail(barang, code, harga, jumlah); adalah contoh pembuatan object.
 
-bash
+```bash
 admin[i] = new AdminKasirDetail(barang, code, harga, jumlah);
+```
 
 
 3. *Atribut* adalah variabel yang ada dalam class. Pada kode ini, barang, code, harga dan jumlah adalah contoh atribut.
