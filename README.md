@@ -37,16 +37,16 @@ admin[i] = new AdminKasirDetail(barang, code, harga, jumlah);
 
 3. *Atribut* adalah variabel yang ada dalam class. Pada kode ini, barang, code, harga dan jumlah adalah contoh atribut.
 
-bash
+```bash
 String barang;
 String code;
 double harga;
 doubel jumlah;
-
+```
 
 4. *Constructor* adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class AdminKasir dan AdminKasieDetail.
 
-bash
+```bash
  public AdminKasir(String barang, String code, double harga, double jumlah) {
         this.barang = barang;
         this.code = code;
@@ -56,11 +56,11 @@ bash
 public AdminKasirDetail(String barang, String code, double harga, double jumlah) {
         super(barang, code, harga, jumlah);
     }
-
+```
 
 5. *Mutator* atau setter digunakan untuk mengubah nilai dari suatu atribut. Pada kode ini, setBarang, seCode ,setHarga, setJumlah adalah contoh method mutator.
 
-bash
+```bash
  public void setBarang(String barang) {
         this.barang = barang;
     }
@@ -76,11 +76,11 @@ bash
     public void setJumlah(double jumlah) {
         this.jumlah = jumlah;
     }
-
+```
 
 6. *Accessor* atau getter digunakan untuk mengambil nilai dari suatu atribut. Pada kode ini, getBarang,getCode,getHarga,getJumlah,getTanggal,getBulan,getTahun,getTanggal1,getBulan,getDiskon adalah contoh method accessor.
 
-bash
+```bash
  public String getBarang() {
         return barang;
     }
@@ -155,28 +155,28 @@ bash
             return 0;
         }
     }
-
+```
 
 
 7. *Encapsulation* adalah konsep menyembunyikan data dengan membuat atribut menjadi private dan hanya bisa diakses melalui method. Pada kode ini, atribut barang , code, harga,jumlah dienkapsulasi dan hanya bisa diakses melalui method getter dan setter.
 
-bash
+```bash
     private String barang;
     private String code;
     private double harga;
     private double jumlah;
 
-
+```
 8. *Inheritance* adalah konsep di mana sebuah class bisa mewarisi property dan method dari class lain. Pada kode ini, AdminKasirDetail mewarisi AdminKasir dengan sintaks extends.
 
-bash
+```bash
 public class AdminKasirDetail extends AdminKasir {
 }
 
-
+```
 9. *Polymorphism* adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun Overriding. Pada kode ini, method displayInfo(String) di AdminKasir merupakan overloading method displayInfo dan displayInfo di AdminKasirDetailDetail merupakan override dari method displayInfo di AdminKaisr.
 
-bash
+```bash
 public String displayInfo(){
         return "Barang :"+getBarang()+
                 "\nCode :"+getCode()+
@@ -192,10 +192,10 @@ public String displayInfo(){
                 "\nTahun Pesanan: " + getTahun();
     }
 
-
+```
 10. *Seleksi* adalah statement kontrol yang digunakan untuk membuat keputusan berdasarkan kondisi. Pada kode ini, digunakan seleksi if else dalam method getTanggal1,getBulan,getDiskon.
 
-bash
+```bash
 public int getTanggal1 (){
         if (getTanggal() >= 0 && getTanggal() <= 31){
         return getTanggal();
@@ -243,19 +243,19 @@ public int getTanggal1 (){
             return 0;
         }
     }
-
+```
 
 11. *Perulangan* adalah statement kontrol yang digunakan untuk menjalankan blok kode berulang kali. Pada kode ini, digunakan loop for untuk meminta input dan menampilkan data.
 
-bash
+```bash
 for (int i = 0; i < admin.length; i++) {
     ...
 }
-
+```
 
 12. *Input Output Sederhana* digunakan untuk menerima input dari user dan menampilkan output ke user. Pada kode ini, digunakan class Scanner untuk menerima input dan method System.out.println untuk menampilkan output.
 
-bash
+```bash
                 System.out.print("Masukan Nama Barang " + (i + 1) + ": ");
                 String barang = scanner.nextLine();
                 System.out.print("Masukan Code Barang " + (i + 1) + ": ");
@@ -271,18 +271,18 @@ bash
                 System.out.println("Daftar Harga Pembelian Barang");
                 System.out.println(data.displayInfo());
                 System.out.println("Total Tagihan Anda : Rp."+data.getDiskon());
-
+```
 
 
 13. *Array* adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel. Pada kode ini, AdminKasirDetail[] admin = new AdminKasirDetail[2]; adalah contoh penggunaan array.
 
-bash
+```bash
 AdminKasirDetail[] admin = new AdminKasirDetail[2];
-
+```
 
 14. *Error Handling* digunakan untuk menangani error yang mungkin terjadi saat runtime. Pada kode ini, digunakan try catch untuk menangani error.
 
-bash
+```bash
 try {
     // code that might throw an exception
           catch (StringIndexOutOfBoundsException e) {
@@ -292,7 +292,7 @@ try {
         } catch (Exception e) {
             System.out.println("Kesalahan Umum: " + e.getMessage());
         }
-
+```
 
 ## Usulan nilai
 
